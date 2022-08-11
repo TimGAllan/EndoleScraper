@@ -2,6 +2,11 @@
 
 A Python Web scraper that scrapes commpany research website Endole.co.uk.
 
+Click below to watch the walkthrough video:
+
+[<img src="EndoleScraper/Assets/Images/Thumbnail.jpg">](https://www.youtube.com/watch?v=AICC_uFGzhI)
+
+
 # Usage
 
 In the project root directory `Input.txt` contains a list of Company Registration Numbers. Modify this file to include all the Reg numbers of the companies you wish to scrape data for.
