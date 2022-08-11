@@ -1,5 +1,6 @@
 import urllib.request
 import pandas as pd
+import datetime as dt
 
 def getValue(webContent, startText, endText):
     startPos = webContent.find(startText)+len(startText)
@@ -28,10 +29,12 @@ def main():
     df = pd.DataFrame()
 
     for line in f.readlines():
-        df = df.append(fetchEndoleDetails(line.replace('\n','')), ignore_index=True)
 
-    print(df)
+        x = fetchEndoleDetails(line.replace('\n',''))
+        df = df.append(x, ignore_index=True)
+        print(dt.datetime.now().strftime("%H:%M:%S"), "Fetched info for", x['RegNo'])
 
     df.to_csv('OutPut.csv',index=False)
+    print(dt.datetime.now().strftime("%H:%M:%S"), "Output to csv complete")
 
 main()
