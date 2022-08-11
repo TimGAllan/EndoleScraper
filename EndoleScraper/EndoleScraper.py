@@ -10,8 +10,6 @@ def getValue(webContent, startText, endText):
 def fetchEndoleDetails(RegNo):
     output = {'RegNo':RegNo}
 
-    #RegNo = '00593232'
-
     url = 'https://suite.endole.co.uk/insight/company/' + RegNo
     response = urllib.request.urlopen(url)  
     webContent = response.read().decode('utf-8')
