@@ -1,6 +1,6 @@
 # Endole Web Scraper
 
-A Python Web scraper that scrapes commpany research website Endole.co.uk.
+A Python Web scraper that scrapes company research website Endole.co.uk.
 
 Click below to watch the walkthrough video:
 
